@@ -2,20 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: #2e2e2e;
 	font-family: Helvetica, sans-serif;
-}
-
-h1 {
-	color: #cccccc;
-}
-
-h2 {
-	color: #cccccc;
-}
-
-p {
-	color: #cccccc;
 }
 
 #wrapper {
@@ -34,10 +21,25 @@ p {
 	float: left;
 }
 
+#gifdivLogo {
+	background-color: #2e2e2e;
+	width: 612px;
+}
+
 #png8Logo {
 	float: left;
 }
 
+#png8divLogo {
+	background-color: #2e2e2e;
+	width: 612px;
+}
+
 #png24Logo {
 	float: left;
+}
+
+#png24divLogo {
+	background-color: #2e2e2e;
+	width: 612px;
 }
