@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #2e2e2e;
+	font-family: Helvetica, sans-serif;
+}
+
+h1 {
+	color: #cccccc;
+}
+
+h2 {
+	color: #cccccc;
+}
+
+p {
+	color: #cccccc;
+}
+
+#wrapper {
+	width: 960px;
+}
+
+#starryNight {
+	float: left;
+}
+
+#acmeLogo {
+	float: left;
+}
+
+#gifLogo {
+	float: left;
+}
+
+#png8Logo {
+	float: left;
+}
+
+#png24Logo {
+	float: left;
+}
