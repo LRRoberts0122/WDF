@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HTML5 Check</title>
+</head>
+
+<body>
+	<div id="wrapper">
+    
+    	<header>
+        	<h1>HTML5 Check</h1>
+         	<nav>
+            	<ul>
+                	<li><a href="#ellaDesign">Ella Design</a></li>
+                    <li><a href="#crowdFavorite">Crowd Favorite</a></li>
+                    <li><a href="#greenHouse">Green House</a></li>
+                    <li><a href="#eclectiqueDesigns">Eclectique Designs</a></li>
+              	</ul>
+            </nav>
+        </header>
+        
+        <article id="ellaDesign">
+            <h1>Ella Design</h1>
+            <a href="http://www.elladesign.com/">www.elladesign.com</a>
+            <br />
+            <img src="images/elladesign.jpg" alt="A screen shot of www.elladesign.com" width="789" height="732" />
+            <p><strong>Description:</strong> Ella Design is a portfolio website for Ella: an independent graphic and web designer who has apparently won several awards for her work. With a strong focus on character sketches as a design choice, it appears to be an appealing website.</p>
+            <p><strong>HTML5 Analysis:</strong> After using the outline tool, the website appears to have good, semantic markup. It outlines efficiently according to the content and markup on the front page. However, after submitting their source code into the W3C validator, there are seval errors. Most of them are minimal: not following the stricter XHTML markup rules, resulting from no alt tags on the images and not using CSS properly in some areas.</p>
+            <p>Most of the errors could easily be fixed by placing alt tags in the image sources and placing their CSS in the CSS document, rather than having it in the HTML.</p>
+        </article> <!-- /ellaDesign -->
+        
+        <article id="crowdFavorite">
+        	<h1>Crowd Favorite</h1>
+            <a href="http://www.crowdfavorite.com/">www.crowdfavorite.com</a>
+            <br />
+            <img src="images/crowdfavorite.jpg" alt="A screen shot of www.crowdfavorite.com" width="889" height="1398" />
+            <p><strong>Description:</strong> Crowd Favorite is a company that focuses on creating powerful websites with Wordpress. Their site looks like any other professional website and meets all aesthetic expectations.</p>
+            <p><strong>HTML5 Analysis:</strong> As expected of any website deelopment company, they have done an amazing job at using clean, semantic markup. Their source code uses all the new HTML5 properties correctly.</p>
+        </article> <!-- /crowdFavorite -->
+        
+        <article id="greenHouse">
+        	<h1>The Green House</h1>
+            <a href="http://greenhouse.fedehartman.com">www.greenhouse.fedehartman.com</a>
+            <br />
+        	<img src="images/greenhouse.jpg" alt="A screen shot of greenhouse.fedehartman.com" width="1422" height="759" />
+        	<p><strong>Description:</strong> The Green House is a company website that is currently promoting green energy. After reviewing the markup and key aspects of the site, it is assumed that this website is for portfolio purposes only. However, the markup is perfectly tabbed and commented and the appropriate HTML5 elements are used.</p>
+        	<p><strong>HTML5 Analysis:</strong> By far, this website seems to use HTML5 more efficiently and effectively than any other websites that have been reviewed during this project. It outlines perfectly, according to the markup they've used.</p>
+        </article> <!-- /greenHouse -->
+        
+        <article id="eclectiqueDesigns">
+        	<h1>Eclectique Designs</h1>
+            <a href="http://www.eclectiquedesigns.com">www.eclectiquedesigns.com</a>
+            <br />
+            <img src="images/eclectiquedesigns.jpg" alt="A screen shot of www.eclectiquedesigns.com" width="989" height="1030" />
+            <p><strong>Description:</strong> Eclectique Designs is a company website that makes and sells hand-made jewelry. After reviewing their markup, there isn't much HTML5 in their source code, with the exception of the doc-type. Almost everything in their website is done with <em>div</em> tags.</p>
+            <p><strong>HTML5 Analysis:</strong> In their markup, there is little to no HTML5. Everything has been used with a <em>div</em> tag.</p>
+          	<p>To make their website HTML5, you would have to replace the following <em>div</em> elements with new, semantic HTML5 markup:</p>
+            <ol>
+            	<li>&lt;div id="headmast"&gt; with &lt;header&gt;</li>
+                <li>&lt;ul class="navigation"&gt; with &lt;nav&gt;</li>
+                <li>&lt;div id="indexproducts"&gt; with &lt;section id="indexproducts"&gt;</li>
+                <li>&lt;div id="indexlatestnews"&gt; with &lt;aside id="indexlatestnews"&gt;</li>
+                <li>&lt;div id="newsSubscribe"&gt; with &lt;aside id="newsSubscribe"&gt;</li>
+                <li>&lt;div id="footer"&gt; with &lt;footer&gt;</li>
+			</ol>
+            <p>Some other areas could have additional <em>sections</em>, too, such as the "Latest News" links should be in their own <em>section</em> rather than <em>spans</em>.</p>
+        </article> <!-- /eclectiqueDesigns -->
+        
+    </div>
+</body>
+</html>
