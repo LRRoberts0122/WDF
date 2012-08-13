@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>HTML Form</title>
+</head>
+
+<body>
+<h1>Schedule an Appointment</h1>
+
+<form method=post action="mailto:lrroberts0122@fullsail.edu">
+		<div>
+			<p>First Name:<br />
+			<input type="text" name="fName" value="First Name..." />
+			</p>
+		</div> <!-- End First Name -->
+		
+		<div>
+			<p>Last Name:<br />
+			<input type="text" name="lName" value="Last Name..." />
+			</p>
+		</div> <!-- End Last Name -->
+		
+		<div>
+			<p>Email:<br />
+			<input type="text" name="email" value="Email..." />
+			</p>
+		</div> <!-- End Email -->
+		
+		<div>
+			<p>Phone:<br />
+			<input type="text" name="phone1" maxlength="3" size="3" /> - <input type="text" name="phone2" maxlength="3" size="3" /> - <input type="text" name="phone3" maxlength="4" size="4" /></p>
+		</div>
+		
+		<div>
+			<p>Requested Service:<br />
+			<input type="checkbox" name="task" value="web" /> Web Design and Development<br />
+			<input type="checkbox" name="task" value="graphic" /> Graphic Design<br />
+			<input type="checkbox" name="task" value="branding" /> Logos and Branding<br />
+			<input type="checkbox" name="task" value="other" /> Other Service Inquiries</p>
+		</div> <!-- End Job Task -->
+		
+		<div>
+			<p>Schedule Appointment:<br />
+			<select name="time">
+				<option>8:00 am</option>
+				<option>9:00 am</option>
+				<option>10:00 am</option>
+				<option>11:00 am</option>
+				<option>12:00 pm</option>
+				<option>1:00 pm</option>
+				<option>2:00 pm</option>
+				<option>3:00 pm</option>
+				<option>4:00 pm</option>
+			</select></p>
+		</div> <!-- End Appointment -->
+		
+		<div>
+			<p>Preferred method of contact: <dfn title="We will contact you to confirm your appointment the day before."><small>?</small></dfn><br />
+			<input type="radio" name="contact" value="phone" />Phone<br />
+			<input type="radio" name="contact" value="email" />Email</p>
+		</div> <!-- End Contact Method -->
+		
+		<div>
+			<p>Message:<br />
+			<textarea name="message" rows="5">Enter a brief message.</textarea>
+			</p>
+		</div> <!-- End Message -->
+		
+		
+		<input type="submit" value="Send" /> <!-- Submit Button -->
+		<input type="reset" value="Clear" /> <!-- Clear Button -->
+</form>
+
+</body>
+
+</html>
