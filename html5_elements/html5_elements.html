@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>HTML5 Elements</title>
+<meta charset="utf-8" />
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<header>
+    
+    <h1>The History of HTML</h1>
+        
+    <nav title="globalNav"> <!-- Nav was given a title because it was outlining as an "Undefined Object." -->
+    	<h1>Global Navigation</h1>
+    	<ul>
+        	<li>Introduction</li>
+        	<li>What is HTML5?</li>
+            <li>A Brief History</li>
+            <li></li>
+       	</ul>
+    </nav>
+    
+    </header>
+    
+    <section id="content">
+    
+    	<article id="introduction">
+        	<header>
+            	<h1>Introduction</h1>
+            </header>
+            <p>Welcome. A lot of the assignments in my HTML class requires us to create our own content, so I'm making additional blog posts for you, so that you can not only see what we're doing, but I can put it to real-world use as well. In this particular project, we're covering some of the new HTML5 elements, so I'll be giving a brief introduction to the HTML.</p>
+        </article> <!-- /introduction -->
+                
+        <article id="html5">
+        	<header>
+            	<h1>What is HTML5?</h1>
+            </header>
+            <p><dfn title="HTML5 is a new version of HTML4, XHTML1, and DOM Level 2 HTML addressing many of the issues of those specifications while at the same time enhancing (X)HTML to more adequately address Web applications. Besides defining a markup language that can be written in both HTML and XML (XHTML) it also defines many APIs that form the basis of the Web architecture. Some of these APIs were known as DOM Level 0 and were never documented before. Yet they are extremely important for browser vendors to support existing Web content and for authors to be able to build Web applications.">HTML5<sup>1</sup></dfn> is the new version of HTML4, meant to consolidate and enhance HTML4, XHTML 2.0 and DOM Level 2. This new specification will address many issues with its predecessors. HTML stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. Though its "true" intent has changed over the years, <mark>HTML has become the structure</mark> of the webpage, while <mark>CSS is the style,</mark> and <mark>JavaScript is the function</mark> (or sometimes called behavior). HTML5 is the continuation of the development as a major improvement on HTML4. Though it is utilized in browsers today, it still hasn't become standardized by the <abbr title="World Wide Web Consortium">W3C</abbr>. The W3C still validates HTML5, however, but will give you a warning like this:</p>
+            <samp>There are <var>0</var> errors and <var>1</var> warning.</samp>
+            <p>It will say, "This document has successfully been checked as HTML. The warning proceeds to inform you that HTML5 has not become a standard, yet. If you're wondering what this means, <a href="http://www.w3.org">www.w3.org</a> is a great place to find out.</p>
+            <details>
+            	<summary>Why do browsers show things differently?</summary>
+                <p>Browsers show things differently because of the parser. The HTML5 parser is different in each browser, and it controls how the markup is turned into web pages. Because HTML5 specifications are not yet "approved" by the W3C, browsers are attempting to keep up with the web by implementing their own support and include features depending on how they feel certain elements should be rendered.</p>
+           	</details>
+        </article> <!-- /html5 -->
+                
+        <article id="history">
+        	<header>
+            	<h1>A Brief History</h1>
+                <address>A summary of a document written by: <a href="http://www.w3.org/People/Raggett/book4/ch02.html" title="http://www.w3.org/People/Raggett/book4/ch02.html">Addison Wesley Longman</a></address>
+          	</header>
+                <p>How did HTML get here? How long has it been around and how has it changed?</p>
+                <p>In 1989, Tim Berners-Lee invented the Web using HTML as its publishing language. At the time, he was working with CERN (the  European Laboratory for Particle Physics in Geneva, Switzerland) when he came up with a concept that would allow researches to consolidate information together in one place from remote locations. He had no idea that it would develop into what we know the web as, today. In his original version of the Web, he based it strongly upon SGML, or Standard Generalized Mark-up Language), which was already an internationally agreed upon method for marking up text into structural units such as paragraphs, headings, list items, and so on.<sup>2</sup> <mark>What was revolutionary about Tim's invention was the development of the anchor element with the HREF attribute.</mark> We see this every day on the web like this:</p>
+                <pre>
+                	<code>
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="formula"&gt;About Formula X<sub>2</sub>&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="formula"&gt;Download Formula X<sub>2</sub>&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="formula"&gt;Contribute to CERN&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                	</code>
+               	</pre>
+                <p>HTML errupts on the internet. Web enthusiasts exchanged ideas, gossip and other trends to debate improvements on the markup language. By May 1994, the first World Wide Web conference took place in Geneva, with a feature on HTML+.</p>
+                <figure>
+                	<img src="images/geneva.jpg" alt="An image of the World Wide Web Conference in Geneva." width="527" height="356" />
+                    <figcaption>Joseph Hardin, Robert Cailliau, Tim Berners-Lee, and Dan Connolly attending the World Wide Web conference in 1994.</figcaption>
+                </figure>
+                <p>Many groups began to form with the rise of the Web. In late 1994, the World Wide Web Consorium, commonly known as the W3C formed. The HTML working group was also established in the following years, however short-lived. With the Web's popularity soaring out of control, the group soon became unmanageable. In November of 1995, vendors formed a new small group dedicated to developing the HTML standard. That same month, style sheets were promised as a future implementation on HTML. Only a few years later, the W3C began their draft on scripting, and finally, in 1997, HTML 3.2 emerges with an approved specification, including script and cascading style sheets.</p>
+                <p>The W3C began their work on a new project, which was the development of XHTML. XHTML was developed to replace HTML 4, however was unsuccessful because it lacked backwards compatibility with older websites and browsers. XHTML features a more strict set of mark-up rules, that caused a majority of websites to not render, or not render properly. HTML was parked at version four until the Web Standards Project, or <i>WaSP</i> began a specification for HTML5.</p>
+        </article> <!-- /history -->
+        
+        <hr />
+        
+        <footer>
+        	<small>
+            <sup>1</sup>Reference: <a href="http://wiki.whatwg.org/wiki/FAQ#What_is_HTML5.3F" title="http://wiki.whatwg.org/wiki/FAQ#What_is_HTML5.3F">WHATWG Wiki</a>
+            <sup>2</sup>Reference: <a href="http://www.w3.org/People/Raggett/book4/ch02.html" title="http://www.w3.org/People/Raggett/book4/ch02.html">A History of HTML</a>
+            </small>
+            <address>Written by <a href="http://webdevreview.blogspot.com/">Lindsay Roberts</a> on <del><time datetime="2012-08-08T16:41Z">August 8, 2012 at 4:41pm</time></del>
+            <ins>Edited by <a href="http://webdevreview.blogspot.com/">Lindsay Roberts</a> on <time datetime="2012-08-12T18:33Z">August 12, 2012 at 6:33pm</time></ins></address>
+            <p>Find this page helpful? <kbd>Command + D</kbd> to Bookmark</p>
+            <p>Help keep this webpage running. <a href="#">Donate Now</a>  Raised: <meter min="0" max="475" low="99" high="300" optimum="475" value="250">250 out of 475</meter></p>
+        </footer>
+    
+    </section> <!-- /content -->
+
+</div> <!-- /wrapper -->
+
+</body>
