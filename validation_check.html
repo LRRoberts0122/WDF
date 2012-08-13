@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Validation Check</title>
+</head>
+
+<body>
+<h1>Validation Check</h1>
+
+<h2>www.gametrailers.com</h2>
+<p>Game Trailers is known for some amazing reviews in regards to video games. For the longest time, their website was absolutely painful to look at. Recently, with the new redesign, I've decided to take a look at the new site and see if their markup is in check with today's standards. These are the results:</p>
+<h3>validator.nu</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>This website also failed the valdator.nu check, with 158 errors. A lot of the errors are similar to those found in the W3C Validor, with ampersands in links confusing validation. Some attributes, such as publish-date is not allowed on a certain span and that a div is not allowed as a child of element a in "this context."</p>
+<h3>HTML Lint</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>After submitting the URL to Lint, it also finds an error. "HTML is not valid (Line 1385: Illegal closing tag &lt;/strong&gt; for &lt;number&gt;)" Lint does not display additional results other than this. It is assumed that there are many more.</p>
+
+<h2>www.ted.com</h2>
+<p>Ted is a website for intellectuals that hosts many videos on a variety of different subjects. Their shorts include interesting and inspiring presentations from people of all backgrounds. They have recently changed their website, and at a glance, it looks semantically sound. Let's look a little deeper...</p>
+<h3>validator.nu</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>Ted failed the validator.nu check with 17 errors. The image source does not have an alt attribute, radio buttons and checkboxes need values and a width attribute is misspelled.</p>
+<h3>HTML Lint</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>Three errors appear after putting the link into the HTML Lint validation. Two of the errors arise from unquoted attributes. The last error reads "Missing whitespace after closing quote 'src="https://secure-us.imrworldwide.com/cgi-bin/m?ci=us-703652h&amp;cg=0&amp;cc=1&amp;ts=noscript" &lt;img&gt;' (I am unsure of what this means.)</p>
+
+<h2>www.propeller.fullsail.edu</h2>
+<p>Throughout our time at Full Sail, we need to use and utilize the Propeller website for a variety of things: schedules, events, and grades. There are a lot of issues with the website, and I thought it would be interesting to take a look at it.</p>
+<h3>validator.nu</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>Propeller tallies up 49 errors in the validator.nu check. The type attribute is missing from the script element, and there are font sizes within the HTML div tags along with a multitude of other errors.</p>
+<h3>HTML Lint</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>Propeller collects another 8 errors on the HTML Lint validator. All of these errors are caused from non-closing elements, even though the elements themselves are different.</p>
+
+<h2>www.chucku.com/chuck U/Chuck U.html</h2>
+<p>This website is a portfolio for a graphic artist and illustrator. Of the first three websites checked, none validated perfectly, and it made me wonder if there truly was a website that validated through both. While I couldn't find the "perfect" website, this one comes extremely close.</p>
+<h3>validator.nu</h3>
+<p>Verdict: <strong>FAIL</strong></p>
+<p>There are a total of three errors detected by the validator.nu check. Two of the errors come from XML errors (and I'm not sure why or how to fix them). However, one of the errors is in reference to the !DOCTYPE, which is using XHTML 1.0 Transitional instead of HTML5.</p>
+<h3>HTML Lint</h3>
+<p>Verdict: <strong>PASS</strong></p>
+<p>Finally, a pass! It took a while to find one that checked out, but it does. This website has been awarded the "GoodHTML" banner from HTML Lint!</p>
+</body>
+
+</html>
