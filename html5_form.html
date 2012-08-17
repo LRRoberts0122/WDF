@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML5 Form</title>
+	<style>
+		#parta {float: left; width: 350px;}
+		#partbcd {float: left; width: 225px;}
+		.formitem {float: left; margin-right: 5px; margin-top: 0px;}
+		h2 {clear: left;}
+	</style>
+    <script>
+	function showValue(newValue)
+	{document.getElementById("range").innerHTML=newValue;}
+			
+$(document).ready(function(){
+    var interval = 2, //How much to increase the progressbar per frame
+        updatesPerSecond = 1000/60, //Set the nr of updates per second (fps)
+        progress =  $('progress'),
+        animator = function(){
+            progress.val(progress.val()+interval);
+            $('#val').text(progress.val());
+            if ( progress.val()+interval < progress.attr('max')){
+               setTimeout(animator, updatesPerSecond);
+            } else {
+                $('#val').text('Done');
+                progress.val(progress.attr('max'));
+            }
+        }
+    
+    $('#theButton').click(animator);
+});
+	</script>
+</head>
+
+<body>
+
+	<h1>HTML5 Forms</h1>
+
+	<div id="parta">
+	
+		<h2>Contact Us</h2>
+		<p>An asterisk indicates a required field.</p>
+	
+		<form method="post" action="mailto:lrroberts0122@fullsail.edu">	
+		
+			<div class="formitem">
+				<p>
+					<label for="title">Title</label> <br />
+					<input type="text" size="6" list="prefix" id="title" autofocus="autofocus" placeholder="..." />
+						<datalist id="prefix">
+							<option label="Mr." value="Mister">
+							<option label="Mrs." value="Misses">
+							<option label="Ms." value="Miss">
+							<option label="Dr." value="Doctor">
+							<option label="Sir" value="Sir">
+						</datalist>
+				</p>
+			</div> <!-- /surname -->
+			
+			<div class="formitem">
+				<p>
+					<label for="firstname">First Name*</label> <br />
+					<input type="text" size="15" name="first" id="firstname" placeholder="First Name..." required="required" />
+				</p>
+			</div> <!-- /firstname -->
+			
+			<div class="formitem">
+				<p>
+					<label for="lastname">Last Name*</label> <br />
+					<input type="text" size="15" name="last" id="lastname" placeholder="Last Name..." required="required" />
+				</p>
+			</div> <!-- /lastname -->
+			
+			<div class="formitem">
+				<p>
+					<label for="mail">Email*</label> <br />
+					<input type="email" name="email" id="mail" placeholder="example@domain.com" required="required" />
+				</p> <!-- /email -->
+			</div>
+			
+			<div class="formitem">
+				<p>
+					<label for="site">Website</label> <br />
+					<input type="url" name="website" id="site" placeholder="http://www.example.com/" /> <br />
+				</p> <!-- /website -->
+			</div>
+				
+			<div class="formitem">
+				<p>
+					<label for="phone">Phone</label> <br />
+					<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
+				</p> <!-- /phone -->
+			</div>
+		
+			<div class="formitem">
+				<p>
+					<label for="mobile">Mobile</label> <br />
+					<input type="tel" name="mobile" id="mobile" placeholder="(XXX) XXX-XXXX" />
+				</p>
+			</div> <!-- /mobile -->
+		
+			<div class="formitem">
+				<p>
+					<label for="subject">Subject*</label> <br />
+					<input type="text" name="subject" id="subject" size="43" placeholder="Subject..." required="required" />
+				</p>
+			</div> <!-- /subject -->
+			
+			<div class="formitem">
+				<p>
+					<label for="message">Message*</label> <br />
+					<textarea rows="6" cols="38" name="message" id="message" placeholder="Enter message here..."></textarea>
+				</p>
+			</div> <!-- /message -->
+		
+			<div class="formitem">
+				<p>
+					<input type="submit" value="Send Now!" />
+				</p>
+			</div> <!-- /submit -->
+	 
+		</form>
+	</div> <!-- /survey -->
+
+
+	<div id="partbcd">		
+		
+		<h2>Google Search</h2>
+		<p>Search for anything using Google!</p>
+		
+		<form method="get" action="http://www.google.com/search">
+		
+			<div class="formitem">
+				<p>
+					<label for="gsearch">Search:</label> <br />
+					<input type="search" name="q" id="gsearch" /> <input type="submit" value="Go!" />
+				</p>
+			</div> <!-- /searchbox -->
+		
+		</form> <!-- /search -->
+		
+		<h2>Survey</h2>
+		
+		<form method="post" action="mailto:lrroberts0122@fullsail.edu">
+		
+			<div class="formitem">
+				<p>
+					<label for="color">What's your favorite color?</label> <br />
+					<input type="color" name="color" id="color" />
+				</p>
+			</div>
+			
+			<div class="formitem">
+				<p>
+					<label for="grades">How am I doing in class?</label> <br />
+					<input type="range" name="grades" id="grades" min="0" max="100" step="1" value="95" onchange="showValue(this.value)" /> <span id="range">95</span>
+				</p>
+			</div>
+			
+			<div class="formitem">
+				<p>
+					<input type="button" value="Finish!" />
+				</p>
+			</div> <!-- /submit -->
+		
+		</form> <!-- /survey -->
+		
+		<h2>Progress Bar</h2>
+		
+		<form method="post" action="#">
+		
+			<div class="formitem">
+				<p>
+					<progress max="200" value="1"></progress>
+					<button id="theButton">Start!</button>
+				</p>
+			</div>
+			
+		</form>
+		
+	</div> <!-- /partbcd -->
+	
+</body>
+
+</html>
