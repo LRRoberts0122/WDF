@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Lab 8: Accessibility Check</title>
+
+<style>
+body {
+		font-family: Verdana, sans-serif;
+		font-size: 10px;
+}
+table, th, td {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+table {
+    border: 1px solid #CCCCCC;
+}
+thead {
+    background-color: #ECECEC;
+    vertical-align: middle;
+    text-align: left;
+}
+th {
+    height: 20px;
+}
+td, th {
+    padding: 10px;
+}
+dd {
+    margin: 0 0 15px 10px;
+}
+caption {
+		margin: 0 0 15px 10px;
+		font-family: Helvetica, sans-serif;
+		font-size: 25px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.fix {
+		width: 235px;
+}
+.img {
+		width: 70px;
+}
+</style>
+</head>
+
+<body>
+
+<table>
+	<caption>Accessibility Check</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">URL</th>
+			<th scope="col">Description</th>
+			<th scope="col">Screenshot</th>
+			<th scope="col" class="img">Section 508</th>
+			<th scope="col" class="fix">Section 508 Fixes</th>
+			<th scope="col" class="img">WCAG 2.0</th>
+			<th scope="col" class="fix">WCAG 2.0 Fixes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1.</td>
+			<td>Google</td>
+			<td><a href="http://www.google.com">http://www.google.com/</a></td>
+			<td>Google is the world's most powerful search engine. The company offers a variety of services, from blogs to social networking. They also develop software for mobile apps for their smart phones. Over the years, Google has expanded their brand into many other companies, like YouTube, Motorola, Blogger, and others.</td>
+			<td>[Screenshot]</td>
+			<td><img src="images/x_mark.png" alt="Google is not Section 508 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+          <summary>No invalid IMG elements found in document body.</summary>
+          <p>Fix: Add attributes ALT, WIDTH, and HEIGHT to all IMG attributes.</p>
+      	</details>
+      	<details>
+      		<summary>No invalid INPUT elements found in document.</summary>
+      		<p>Fix: Add quotes to all TYPE attribute values.</p>
+      	</details>
+			</td>
+			<td><img src="images/x_mark.png" alt="Google is not WCAG 2.0 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+          <summary>TEXTAREA element missing an associated label.</summary>
+          <p>Fix: Add LABEL elements before or after TEXTAREA elements.</p>
+      	</details>
+      	<details>
+      		<summary>All text colors are not set.</summary>
+      		<p>Fix: Ensure all of the text colors, or none of the text colors are set using attributes on the BODY element.</p>
+      	</details>
+      	<details>
+      		<summary>Document language not identified.</summary>
+      		<p>Fix: Add the LANG attribute to the HTML tag.</p>
+      	</details>
+			</td>
+		</tr>
+		<tr>
+			<td>2.</td>
+			<td>DayZ</td>
+			<td><a href="http://www.dayzmod.com/">http://www.dayzmod.com/</a></td>
+			<td>The DayZ mod is a zombie-survival video game unlike anything to date in the video game industry. It is a mod for the video game Arma 2 (a military / shooter game) that in its rare case would be considered by most better that the original game.</td>
+			<td>[Screenshot]</td>
+			<td><img src="images/x_mark.png" alt="DayZ is not Section 508 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>All IMG elements are required to contain the ALT attribute.</summary>
+					<p>Fix: Add the ALT attribute to all image elements.</p>
+				</details>
+				<details>
+					<summary>All INPUT elements are required to use a LABEL.</summary>
+					<p>Fix: Add LABEL elements before or after INPUT elements.</p>
+				</details>
+			</td>
+			<td><img src="images/x_mark.png" alt="DayZ is not WCAG 2.0 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>IMG element missing ALT attribute.</summary>
+					<p>Fix: Add ALT attribute to all image elements.</p>
+				</details>
+				<details>
+					<summary>Color contrast of link text and background is not sufficient.</summary>
+					<p>Fix: Change color codes to produce sufficient contrast.</p>
+				</details>
+				<details>
+					<summary>Anchor contains no text.</summary>
+					<p>Fix: Add text to A elements or the ALT attribute to images within A elements.</p>
+				</details>
+				<details>
+					<summary>Document language not identified.</summary>
+					<p>Fix: Add the LANG attribute to the HTML tag.</p>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>Live 365</td>
+			<td><a href="http://www.live365.com/">http://www.live365.com/</a></td>
+			<td>Live 365 is an online radio service. They have a huge variety of music, or stations, that a user can listen to. You can even listen to all broadcasts if you want. They have an easy-to-use widget on all pages of their website where a user can listen to radio at the click of a button.</td>
+			<td>[Screenshot]</td>
+			<td><img src="images/x_mark.png" alt="Live 365 is not Section 508 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>All IMG elements are required to contain the ALT attribute.</summary>
+					<p>Fix: Add the ALT attribute to all image elements.</p>
+				</details>
+				<details>
+					<summary>All INPUT elements are required to use a LABEL.</summary>
+					<p>Fix: Add LABEL elements before or after INPUT elements.</p>
+				</details>
+			</td>
+			<td><img src="images/x_mark.png" alt="Live 365 is not WCAG 2.0 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>IMG element missing ALT attribute.</summary>
+					<p>Fix: Add ALT attribute to all image elements.</p>
+				</details>
+				<details>
+					<summary>Image used for INPUT element is missing ALT text.</summary>
+					<p>Fix: Add ALT attribute to the image used for the INPUT element.</p>
+				</details>
+				<details>
+					<summary>INPUT element, TYPE of "text" has no text in LABEL.</summary>
+					<p>Fix: Add text to the LABEL element for the input.</p>
+				</details>
+				<details>
+					<summary>Color contrast of link text and background is not sufficient.</summary>
+					<p>Fix: Change color codes to produce sufficient contrast.</p>
+				</details>
+				<details>
+					<summary>Anchor contains no text.</summary>
+					<p>Fix: Add text to A elements or the ALT attribute to images within A elements.</p>
+				</details>
+				<details>
+					<summary>Label text is empty.</summary>
+					<p>Fix: Add text to the LABEL element.</p>
+				</details>
+				<details>
+					<summary>On mouse over script is not keyboard accessible.</summary>
+					<p>Fix: Add an alternative method for keyboard input.</p>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td>4.</td>
+			<td>AChecker</td>
+			<td><a href="http://www.achecker.ca/checker/index.php">http://www.achecker.ca/</a></td>
+			<td>AChecker is an online tool that can be used to help specify whether or not your website is compliant with WCAG 2.0. In fact, this is the website that I have been using to check websites. I always like to see whether or not their own website checks out...</td>
+			<td>[Screenshot]</td>
+			<td><img src="images/check_mark.png" alt="AChecker is Section 508 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>Visual aesthetic murder.</summary>
+					<p>Though it passes Section 508, it is still a visually unappealing website...</p>
+				</details>
+			</td>
+			<td><img src="images/check_mark.png" alt="AChecker is WCAG 2.0 compliant." width="20" height="26" /></td>
+			<td>
+				<details>
+					<summary>Visual aesthetic murder.</summary>
+					<p>Though it passes WCAG 2.0, it is still a visually unappealing website...</p>
+				</details>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+
+</html>

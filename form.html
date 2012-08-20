@@ -10,40 +10,42 @@
 <h1>Schedule an Appointment</h1>
 
 <form method=post action="mailto:lrroberts0122@fullsail.edu">
+	<fieldset>
+		<legend>Contact Information</legend>
 		<div>
-			<p>First Name:<br />
-			<input type="text" name="fName" value="First Name..." />
+			<p><label for="fName">First Name:</label><br />
+			<input type="text" name="name" id="fName" placeholder="First Name..." />
 			</p>
 		</div> <!-- End First Name -->
 		
 		<div>
-			<p>Last Name:<br />
-			<input type="text" name="lName" value="Last Name..." />
+			<p><label for="lName">Last Name:</label> <br />
+			<input type="text" name="name" id="lName" placeholder="Last Name..." />
 			</p>
 		</div> <!-- End Last Name -->
 		
 		<div>
-			<p>Email:<br />
-			<input type="text" name="email" value="Email..." />
+			<p><label for="email">Email:</label> <br />
+			<input type="email" name="email" id="email" placeholder="example@domain.com" />
 			</p>
 		</div> <!-- End Email -->
 		
 		<div>
-			<p>Phone:<br />
-			<input type="text" name="phone1" maxlength="3" size="3" /> - <input type="text" name="phone2" maxlength="3" size="3" /> - <input type="text" name="phone3" maxlength="4" size="4" /></p>
+			<p><label for="areacode">Phone:</label><br />
+			<input type="text" name="phone" id="areacode" maxlength="3" size="3" placeholder="XXX" /> - <input type="text" name="phone" id="prefix" maxlength="3" size="3" placeholder="XXX" /> - <input type="text" name="phone" id="suffix" maxlength="4" size="4" placeholder="XXXX" /></p>
 		</div>
 		
 		<div>
 			<p>Requested Service:<br />
-			<input type="checkbox" name="task" value="web" /> Web Design and Development<br />
-			<input type="checkbox" name="task" value="graphic" /> Graphic Design<br />
-			<input type="checkbox" name="task" value="branding" /> Logos and Branding<br />
-			<input type="checkbox" name="task" value="other" /> Other Service Inquiries</p>
+			<input type="checkbox" name="task" id="web" /> <label for="web">Web Design and Development</label> <br />
+			<input type="checkbox" name="task" id="graphic" /> <label for="graphic">Graphic Design</label> <br />
+			<input type="checkbox" name="task" id="branding" /> <label for="branding">Logos and Branding</label> <br />
+			<input type="checkbox" name="task" id="other" /> <label for="other">Other Service Inquiries</label> </p>
 		</div> <!-- End Job Task -->
 		
 		<div>
-			<p>Schedule Appointment:<br />
-			<select name="time">
+			<p><label for="time">Schedule Appointment:</label> <br />
+			<select name="time" id="time">
 				<option>8:00 am</option>
 				<option>9:00 am</option>
 				<option>10:00 am</option>
@@ -58,19 +60,20 @@
 		
 		<div>
 			<p>Preferred method of contact: <dfn title="We will contact you to confirm your appointment the day before."><small>?</small></dfn><br />
-			<input type="radio" name="contact" value="phone" />Phone<br />
-			<input type="radio" name="contact" value="email" />Email</p>
+			<input type="radio" name="contact" id="phone" /> <label for="phone">Phone</label> <br />
+			<input type="radio" name="contact" id="e-mail" /> <label for="e-mail">Email</label> </p>
 		</div> <!-- End Contact Method -->
 		
 		<div>
-			<p>Message:<br />
-			<textarea name="message" rows="5">Enter a brief message.</textarea>
+			<p><label for="message">Message:</label> <br />
+			<textarea name="message" id="message" rows="5">Enter a brief message.</textarea>
 			</p>
 		</div> <!-- End Message -->
 		
 		
 		<input type="submit" value="Send" /> <!-- Submit Button -->
 		<input type="reset" value="Clear" /> <!-- Clear Button -->
+	</fieldset>
 </form>
 
 </body>
