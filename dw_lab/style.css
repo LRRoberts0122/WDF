@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	margin: 0px;
+}
+
+body {
+	background: #009fe1;
+}
+
+#container {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #777777;
+	background: url(img/bg_wrapper.png) repeat-y;
+	margin: 0px auto;
+	width: 650px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#container header {
+	background: url(img/bg_header.jpg) no-repeat left;
+	width: 650px;
+	height: 130px;
+}
+
+#container header h1 {
+	text-indent: -9999px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#container nav {
+	font-size: 130%;
+	font-weight: bold;
+	background: url(img/bg_nav.jpg) repeat-x left;
+	margin: 0px;
+	padding: 10px 20px;
+}
+
+#container nav ul li {
+	font-size: 80%;
+	display: inline;
+	padding-right: 2em;
+	list-style: none;
+}
+
+#container nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container nav ul li a {
+	color: #FFF;
+}
+
+#container #main {
+	padding: 35px 20px 0px;
+}
+
+#container #main #content h2 {
+	color: #00a1e4;
+}
+#container #main #support h2 {
+	color: #00a1e4;
+	margin-top: 0;
+}
+
+#container #main #content {
+	float: right;
+	width: 350px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#container #main #content h2 {
+	font-size: 155%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#container #main #support {
+	background: url(img/divider.jpg) no-repeat right top;
+	float: left;
+	width: 220px;
+}
+
+#container #main #support ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container #main #support ul li {
+	padding-bottom: 20px;
+	list-style: none;
+}
+
+#container #main #support ul li img {
+	border: 1px solid #666666;
+}
+
+#container footer {
+	color: #9a9a9a;
+	text-align: right;
+	padding: 15px;
+	clear: both;
+	border-radius: 20px;
+}
+
+#container nav ul li a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	border-bottom: solid 1px #999999;
+}
+
+#container #main #content p {
+	font-size: 12px;
+	font-weight: lighter;
+}
+#container #main #content h3 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #00a1e4;
+	margin: 0;
+	padding: 0;
+}
+
+h3+p {
+	margin-top: 0;	
+}
